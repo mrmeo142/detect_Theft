@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Giám sát an ninh</title>
+  <link rel="stylesheet" href="./css/home.css" />
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li id="navMonitor" class="active">Giám sát</li>
+          <li id="navUserInfo">Thông tin người dùng</li>
+          <li id="navLogout">Đăng xuất</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Màn hình chính: Giám sát -->
+    <main class="main-content" id="mainContent">
+      <h1>Hệ thống giám sát an ninh</h1>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Gia tốc</h3>
+          <p id="acc">Đang tải...</p>
+        </div>
+        <div class="card">
+          <h3>Trạng thái cảm biến</h3>
+          <p id="sensor">Đang tải...</p>
+        </div>
+        <div class="card">
+          <h3>Cảnh báo</h3>
+          <p id="alert">Đang tải...</p>
+        </div>
+        <div class="card">
+          <h3>Điều khiển báo động</h3>
+          <button id="alarmToggleBtn">Bật</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Màn hình chỉnh sửa thông tin người dùng -->
+    <div class="user-info-form" id="userInfoForm" style="display: none;">
+      <h2>Chỉnh sửa thông tin người dùng</h2>
+      <form id="editUserForm">
+        <input type="text" id="editUsername" placeholder="Họ tên" required />
+        <input type="email" id="editEmail" placeholder="Email" required />
+        <input type="password" id="editPassword" placeholder="Mật khẩu mới" />
+        <button type="submit">Cập nhật</button>
+        <button type="button" onclick="hideUserForm()">Hủy</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/navbar.js"></script>
+  <script src="./js/home.js"></script>
+</body>
+</html>
