@@ -7,8 +7,8 @@
 #include "addons/RTDBHelper.h"
 
 // WiFi và Firebase
-#define WIFI_SSID "TP-LINK_30FA"
-#define WIFI_PASSWORD "minhhue77"
+#define WIFI_SSID "my_wifi"
+#define WIFI_PASSWORD "my_password"
 #define API_KEY "AIzaSyCPbF26LYp55XWEN34yliKLw9rTNw-XOG0"
 #define DATABASE_URL "https://detect-theft-dc3d6-default-rtdb.asia-southeast1.firebasedatabase.app/deletethat" // xoa deletethat de lay dung link
 
